@@ -1,0 +1,278 @@
+import os
+
+## --- CONSTANTS ---
+FILE_NAME = "credentials.txt"
+DELIMITER = "|"
+ROT_SHIFT = 3
+
+
+## --- ROT3 CIPHER FUNCTIONS ---
+
+def rot3_cipher(text, mode='encrypt'):
+    """
+    Encrypts or decrypts text using simple ROT3 cipher.
+    Mode argument will determine the direction.
+    Encrypt will shift +3 or decrypt will shift - 3.
+    Only alphabetic characters are shifted.
+    """
+    result = ""
+    shift = ROT_SHIFT if mode == 'encrypt' else -ROT_SHIFT
+
+    for char in text:
+        if 'a' <= char <= 'z':
+            #handle lowercase letters
+            start = ord('a')
+            new_ord = (ord(char) - start + shift) % 26 + start
+            result += chr(new_ord)
+        elif 'A' <= char <= 'Z':
+            #handle uppercase letters
+            start = ord('A')
+            new_ord = (ord(char) - start + shift) % 26 + start
+            result += chr(new_ord)
+        else:
+            #keep non-alphabetic characters unchanged
+            result += char
+
+    return result
+
+
+## --- CORE APPLICATION FUNCTIONS ---
+
+def add_new_credential():
+    """
+    Prompts user for credential details, encrypts them,
+    and appends the record to the storage file.
+    """
+    #get the data from user
+    print("\n--- ADD NEW CREDENTIAL ---")
+    resource = input("Enter Resource/URL: ")
+    username = input("Enter Username: ")
+    password = input("Enter Password: ")
+
+    #combine data using delimiter
+    data_record = f"{resource}{DELIMITER}{username}{DELIMITER}{password}\n"
+
+    #encryption
+    encrypted_record = rot3_cipher(data_record, mode='encrypt')
+
+    #append new record
+    try:
+        with open(FILE_NAME, 'a', encoding='utf-8') as file_handle:
+            file_handle.write(encrypted_record)
+
+        print("\nCredential added and encrypted successfully.")
+    except IOError:
+        print("\nError: Could not save the data to the file.")
+
+
+def view_all_credentials():
+    """
+    Reads file contents, decrypts each record, and displays data 
+    """
+    print("\n--- STORED CREDENTIALS ---")
+    records = []
+
+    try:
+        with open(FILE_NAME, 'r', encoding='utf-8') as file_handle:
+            file_contents = file_handle.readlines()
+
+        if not file_contents:
+            print("The credentials file is empty. Nothing to display.")
+            return []
+        
+        #display headings
+        header_format = "{:<5} {:<20} {:<20} {:<20}"
+        print("=" * 67)
+        print(header_format.format("#", "RESOURCE", "USERNAME", "PASSWORD"))
+        print("=" * 67)
+
+        #decryption and display
+        for i, line in enumerate(file_contents):
+            if line.strip():
+                decrypted_record = rot3_cipher(line.strip(), mode='decrypt')
+
+                parts = decrypted_record.split(DELIMITER)
+
+                if len(parts) == 3:
+                    resource, username, password = parts
+
+                    #temporarily store the record for update/delete functions
+                    records.append({'resource': resource, 'username': username, 'password': password})
+
+                    #display
+                    print(header_format.format(i + 1, resource, username, password))
+
+                else:
+                    print("Warning: Skipped a corrupted line in the file.")
+
+        print("=" * 67)
+        return records
+
+    except FileNotFoundError:
+        print("Error: The credentials file was not found.")
+    except IOError:
+        print("Error: Could not read the credentials file.")
+
+def update_credential():
+    """
+    Allows user to select a record by index and modify its fields.
+    """
+    print("\n--- UPDATE CREDENTIAL ---")
+    records = view_all_credentials()
+
+    if not records:
+        print("No credentials to update.")
+        return
+    
+    try:
+        #get index from user 
+        index_to_update = int(input("\nEnter the number of the record to update: ")) - 1
+
+        if 0 <= index_to_update < len(records):
+            record = records[index_to_update]
+
+            print(f"\n---Updating Record #{index_to_update + 1}: {record['resource']} ---")
+
+            #prompt for new values
+            new_resource = input(f"New Resource/URL (current: {record['resource']}): ") or record['resource']
+            new_username = input(f"New Username (current: {record['username']}): ") or record['username']
+            new_password = input(f"New Password (current: {record['password']}): ") or record['password']
+
+            #apply updates to memory
+            record['resource'] = new_resource
+            record['username'] = new_username
+            record['password'] = new_password
+
+            #write entire list back to file
+            lines_to_write = []
+            for rec in records:
+                data_record = f"{rec['resource']}{DELIMITER}{rec['username']}{DELIMITER}{rec['password']}\n"
+                lines_to_write.append(rot3_cipher(data_record, mode='encrypt'))
+
+            try:
+                with open(FILE_NAME, 'w', encoding='utf-8') as file_handle:
+                    file_handle.writelines(lines_to_write)
+                print(f"\nRecord #{index_to_update + 1} updated successfully.")
+            except IOError:
+                print("\nError: Could not write/overwrite data to the file.")
+
+        else:
+            print("\nInvalid record number.")
+    except ValueError:
+        print("\nInvalid input. Please enter a number.")
+
+            
+
+
+def delete_credential():
+    """ 
+    Select a record from index and delete it.
+    """
+    print("\n--- DELETE CREDENTIAL ---")
+    records = view_all_credentials()
+
+    if not records:
+        print("No credentials to delete.")
+        return
+
+    try:
+        #get index from user
+        index_to_delete = int(input("\nEnter the number of the record to delete: ")) - 1
+
+        if 0 <= index_to_delete < len(records):
+            resource_to_delete = records[index_to_delete]['resource']
+
+            confirmation = input(f"Are you sure you want to delete the record for '{resource_to_delete}'? "
+                                 f"(yes/no): ").lower()
+            
+            if confirmation == 'yes':
+            #remove record from list in memory
+                del records[index_to_delete]
+
+                #write entire remaining list back to file
+                lines_to_write = []
+                for rec in records:
+                    data_record = f"{rec['resource']}{DELIMITER}{rec['username']}{DELIMITER}{rec['password']}\n"
+                    lines_to_write.append(rot3_cipher(data_record, mode='encrypt'))
+
+                try:
+                    with open(FILE_NAME, 'w', encoding='utf-8') as file_handle:
+                        file_handle.writelines(lines_to_write)
+                    print(f"\nRecord for '{resource_to_delete}' deleted successfully.")
+                except IOError:
+                    print("\nError: Could not write/overwrite data to the file.")
+
+            else:
+                print("\nOperation cancelled.")
+
+        else:
+            print("\nInvalid record number.")
+
+    except ValueError:
+        print("\nInvalid input. Please enter a number.")
+        
+        
+
+
+## --- MAIN PROGRAM ---
+
+def main():
+    """ 
+    Main control function containing menu loop and initial file setup.
+    """
+    if not os.path.exists(FILE_NAME):
+        try:
+            with open(FILE_NAME, 'w', encoding='utf-8') as f:
+                pass 
+            print(f"Created new credential file: {FILE_NAME}")
+        except IOError:
+            print("CRITICAL ERROR: Cannot create the storage file. Exiting.")
+            return
+        
+    print("\n\n*** Apps2U Credential Manager for DigiCore ***")
+
+    choice = ''
+
+    while choice != '4':
+        print("\n---MENU OPTIONS---")
+        print("[1] Add Stored Credentials")
+        print("[2] View Stored Credentials")
+        print("[3] Update/Delete Credentials")
+        print("[4] Exit the Program")
+
+        user_input = input("\nSelect an option (1-4): ")
+
+        try:
+            choice = user_input.strip()
+
+            if choice == '1':
+                add_new_credential()
+            elif choice == '2':
+                view_all_credentials()
+            elif choice == '3':
+                #submenu for update/delete
+                print("\n--- UPDATE/DELETE ---")
+                print("a. Update a record")
+                print("b. Delete a record")
+                sub_choice = input("Select 'a' or 'b': ").lower().strip()
+                if sub_choice == 'a':
+                    update_credential()
+                elif sub_choice == 'b':
+                    delete_credential()
+                else:
+                    print("\nInvalid sub-option.")
+            elif choice == '4':
+                print("\nProgram will now terminate.")
+            else:
+                print("\n Invalid option. Please enter 1, 2, 3, or 4.")
+
+        except Exception as e:
+            print(f"\n An unexpected error occurred: {e}")
+
+    print("Goodbye!")
+
+if __name__ == "__main__":
+    main()
+
+
+
