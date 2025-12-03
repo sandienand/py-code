@@ -1,0 +1,2 @@
+[04-12-2025 02:36:41] Input validation successful. Beginning scan.
+[04-12-2025 02:37:35] Starting scan on 127.0.0.1 from port 1 to 1024.

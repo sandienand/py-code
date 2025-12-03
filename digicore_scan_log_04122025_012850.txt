@@ -1,0 +1,202 @@
+[04-12-2025 01:28:50] Input validation successful. Beginning scan.
+[04-12-2025 01:28:50] Starting scan on 192.168.1.1 from port 1 to 100.
+[04-12-2025 01:28:51] [WARNING] Port 1 returned code 10035. Treating as ERROR.
+[04-12-2025 01:28:51] Port 1: ERROR during connection attempt.
+[04-12-2025 01:28:52] [WARNING] Port 2 returned code 10035. Treating as ERROR.
+[04-12-2025 01:28:52] Port 2: ERROR during connection attempt.
+[04-12-2025 01:28:53] [WARNING] Port 3 returned code 10035. Treating as ERROR.
+[04-12-2025 01:28:53] Port 3: ERROR during connection attempt.
+[04-12-2025 01:28:54] [WARNING] Port 4 returned code 10035. Treating as ERROR.
+[04-12-2025 01:28:54] Port 4: ERROR during connection attempt.
+[04-12-2025 01:28:55] [WARNING] Port 5 returned code 10035. Treating as ERROR.
+[04-12-2025 01:28:55] Port 5: ERROR during connection attempt.
+[04-12-2025 01:28:56] [WARNING] Port 6 returned code 10035. Treating as ERROR.
+[04-12-2025 01:28:56] Port 6: ERROR during connection attempt.
+[04-12-2025 01:28:57] [WARNING] Port 7 returned code 10035. Treating as ERROR.
+[04-12-2025 01:28:57] Port 7: ERROR during connection attempt.
+[04-12-2025 01:28:58] [WARNING] Port 8 returned code 10035. Treating as ERROR.
+[04-12-2025 01:28:58] Port 8: ERROR during connection attempt.
+[04-12-2025 01:28:59] [WARNING] Port 9 returned code 10035. Treating as ERROR.
+[04-12-2025 01:28:59] Port 9: ERROR during connection attempt.
+[04-12-2025 01:29:00] [WARNING] Port 10 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:00] Port 10: ERROR during connection attempt.
+[04-12-2025 01:29:01] [WARNING] Port 11 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:01] Port 11: ERROR during connection attempt.
+[04-12-2025 01:29:03] [WARNING] Port 12 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:03] Port 12: ERROR during connection attempt.
+[04-12-2025 01:29:04] [WARNING] Port 13 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:04] Port 13: ERROR during connection attempt.
+[04-12-2025 01:29:05] [WARNING] Port 14 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:05] Port 14: ERROR during connection attempt.
+[04-12-2025 01:29:06] [WARNING] Port 15 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:06] Port 15: ERROR during connection attempt.
+[04-12-2025 01:29:07] [WARNING] Port 16 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:07] Port 16: ERROR during connection attempt.
+[04-12-2025 01:29:08] [WARNING] Port 17 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:08] Port 17: ERROR during connection attempt.
+[04-12-2025 01:29:09] [WARNING] Port 18 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:09] Port 18: ERROR during connection attempt.
+[04-12-2025 01:29:10] [WARNING] Port 19 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:10] Port 19: ERROR during connection attempt.
+[04-12-2025 01:29:11] [WARNING] Port 20 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:11] Port 20: ERROR during connection attempt.
+[04-12-2025 01:29:12] [WARNING] Port 21 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:12] Port 21: ERROR during connection attempt.
+[04-12-2025 01:29:13] [WARNING] Port 22 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:13] Port 22: ERROR during connection attempt.
+[04-12-2025 01:29:14] [WARNING] Port 23 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:14] Port 23: ERROR during connection attempt.
+[04-12-2025 01:29:15] [WARNING] Port 24 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:15] Port 24: ERROR during connection attempt.
+[04-12-2025 01:29:16] [WARNING] Port 25 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:16] Port 25: ERROR during connection attempt.
+[04-12-2025 01:29:17] [WARNING] Port 26 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:17] Port 26: ERROR during connection attempt.
+[04-12-2025 01:29:18] [WARNING] Port 27 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:18] Port 27: ERROR during connection attempt.
+[04-12-2025 01:29:19] [WARNING] Port 28 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:19] Port 28: ERROR during connection attempt.
+[04-12-2025 01:29:20] [WARNING] Port 29 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:20] Port 29: ERROR during connection attempt.
+[04-12-2025 01:29:21] [WARNING] Port 30 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:21] Port 30: ERROR during connection attempt.
+[04-12-2025 01:29:22] [WARNING] Port 31 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:22] Port 31: ERROR during connection attempt.
+[04-12-2025 01:29:23] [WARNING] Port 32 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:23] Port 32: ERROR during connection attempt.
+[04-12-2025 01:29:24] [WARNING] Port 33 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:24] Port 33: ERROR during connection attempt.
+[04-12-2025 01:29:25] [WARNING] Port 34 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:25] Port 34: ERROR during connection attempt.
+[04-12-2025 01:29:26] [WARNING] Port 35 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:26] Port 35: ERROR during connection attempt.
+[04-12-2025 01:29:27] [WARNING] Port 36 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:27] Port 36: ERROR during connection attempt.
+[04-12-2025 01:29:28] [WARNING] Port 37 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:28] Port 37: ERROR during connection attempt.
+[04-12-2025 01:29:29] [WARNING] Port 38 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:29] Port 38: ERROR during connection attempt.
+[04-12-2025 01:29:30] [WARNING] Port 39 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:30] Port 39: ERROR during connection attempt.
+[04-12-2025 01:29:31] [WARNING] Port 40 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:31] Port 40: ERROR during connection attempt.
+[04-12-2025 01:29:32] [WARNING] Port 41 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:32] Port 41: ERROR during connection attempt.
+[04-12-2025 01:29:33] [WARNING] Port 42 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:33] Port 42: ERROR during connection attempt.
+[04-12-2025 01:29:34] [WARNING] Port 43 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:34] Port 43: ERROR during connection attempt.
+[04-12-2025 01:29:35] [WARNING] Port 44 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:35] Port 44: ERROR during connection attempt.
+[04-12-2025 01:29:36] [WARNING] Port 45 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:36] Port 45: ERROR during connection attempt.
+[04-12-2025 01:29:37] [WARNING] Port 46 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:37] Port 46: ERROR during connection attempt.
+[04-12-2025 01:29:38] [WARNING] Port 47 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:38] Port 47: ERROR during connection attempt.
+[04-12-2025 01:29:39] [WARNING] Port 48 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:39] Port 48: ERROR during connection attempt.
+[04-12-2025 01:29:40] [WARNING] Port 49 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:40] Port 49: ERROR during connection attempt.
+[04-12-2025 01:29:41] [WARNING] Port 50 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:41] Port 50: ERROR during connection attempt.
+[04-12-2025 01:29:42] [WARNING] Port 51 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:42] Port 51: ERROR during connection attempt.
+[04-12-2025 01:29:43] [WARNING] Port 52 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:43] Port 52: ERROR during connection attempt.
+[04-12-2025 01:29:43] Port 53: OPEN
+[04-12-2025 01:29:44] [WARNING] Port 54 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:44] Port 54: ERROR during connection attempt.
+[04-12-2025 01:29:45] [WARNING] Port 55 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:45] Port 55: ERROR during connection attempt.
+[04-12-2025 01:29:46] [WARNING] Port 56 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:46] Port 56: ERROR during connection attempt.
+[04-12-2025 01:29:47] [WARNING] Port 57 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:47] Port 57: ERROR during connection attempt.
+[04-12-2025 01:29:48] [WARNING] Port 58 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:48] Port 58: ERROR during connection attempt.
+[04-12-2025 01:29:49] [WARNING] Port 59 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:49] Port 59: ERROR during connection attempt.
+[04-12-2025 01:29:50] [WARNING] Port 60 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:50] Port 60: ERROR during connection attempt.
+[04-12-2025 01:29:51] [WARNING] Port 61 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:51] Port 61: ERROR during connection attempt.
+[04-12-2025 01:29:52] [WARNING] Port 62 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:52] Port 62: ERROR during connection attempt.
+[04-12-2025 01:29:53] [WARNING] Port 63 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:53] Port 63: ERROR during connection attempt.
+[04-12-2025 01:29:54] [WARNING] Port 64 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:54] Port 64: ERROR during connection attempt.
+[04-12-2025 01:29:55] [WARNING] Port 65 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:55] Port 65: ERROR during connection attempt.
+[04-12-2025 01:29:56] [WARNING] Port 66 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:56] Port 66: ERROR during connection attempt.
+[04-12-2025 01:29:57] [WARNING] Port 67 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:57] Port 67: ERROR during connection attempt.
+[04-12-2025 01:29:58] [WARNING] Port 68 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:58] Port 68: ERROR during connection attempt.
+[04-12-2025 01:29:59] [WARNING] Port 69 returned code 10035. Treating as ERROR.
+[04-12-2025 01:29:59] Port 69: ERROR during connection attempt.
+[04-12-2025 01:30:00] [WARNING] Port 70 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:00] Port 70: ERROR during connection attempt.
+[04-12-2025 01:30:01] [WARNING] Port 71 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:01] Port 71: ERROR during connection attempt.
+[04-12-2025 01:30:02] [WARNING] Port 72 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:02] Port 72: ERROR during connection attempt.
+[04-12-2025 01:30:03] [WARNING] Port 73 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:03] Port 73: ERROR during connection attempt.
+[04-12-2025 01:30:04] [WARNING] Port 74 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:04] Port 74: ERROR during connection attempt.
+[04-12-2025 01:30:05] [WARNING] Port 75 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:05] Port 75: ERROR during connection attempt.
+[04-12-2025 01:30:06] [WARNING] Port 76 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:06] Port 76: ERROR during connection attempt.
+[04-12-2025 01:30:07] [WARNING] Port 77 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:07] Port 77: ERROR during connection attempt.
+[04-12-2025 01:30:08] [WARNING] Port 78 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:08] Port 78: ERROR during connection attempt.
+[04-12-2025 01:30:09] [WARNING] Port 79 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:09] Port 79: ERROR during connection attempt.
+[04-12-2025 01:30:10] [WARNING] Port 80 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:10] Port 80: ERROR during connection attempt.
+[04-12-2025 01:30:11] [WARNING] Port 81 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:11] Port 81: ERROR during connection attempt.
+[04-12-2025 01:30:12] [WARNING] Port 82 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:12] Port 82: ERROR during connection attempt.
+[04-12-2025 01:30:13] [WARNING] Port 83 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:13] Port 83: ERROR during connection attempt.
+[04-12-2025 01:30:14] [WARNING] Port 84 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:14] Port 84: ERROR during connection attempt.
+[04-12-2025 01:30:15] [WARNING] Port 85 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:15] Port 85: ERROR during connection attempt.
+[04-12-2025 01:30:16] [WARNING] Port 86 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:16] Port 86: ERROR during connection attempt.
+[04-12-2025 01:30:17] [WARNING] Port 87 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:17] Port 87: ERROR during connection attempt.
+[04-12-2025 01:30:18] [WARNING] Port 88 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:18] Port 88: ERROR during connection attempt.
+[04-12-2025 01:30:19] [WARNING] Port 89 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:19] Port 89: ERROR during connection attempt.
+[04-12-2025 01:30:20] [WARNING] Port 90 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:20] Port 90: ERROR during connection attempt.
+[04-12-2025 01:30:21] [WARNING] Port 91 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:21] Port 91: ERROR during connection attempt.
+[04-12-2025 01:30:22] [WARNING] Port 92 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:22] Port 92: ERROR during connection attempt.
+[04-12-2025 01:30:23] [WARNING] Port 93 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:23] Port 93: ERROR during connection attempt.
+[04-12-2025 01:30:24] [WARNING] Port 94 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:24] Port 94: ERROR during connection attempt.
+[04-12-2025 01:30:25] [WARNING] Port 95 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:25] Port 95: ERROR during connection attempt.
+[04-12-2025 01:30:26] [WARNING] Port 96 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:26] Port 96: ERROR during connection attempt.
+[04-12-2025 01:30:27] [WARNING] Port 97 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:27] Port 97: ERROR during connection attempt.
+[04-12-2025 01:30:28] [WARNING] Port 98 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:28] Port 98: ERROR during connection attempt.
+[04-12-2025 01:30:29] [WARNING] Port 99 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:29] Port 99: ERROR during connection attempt.
+[04-12-2025 01:30:30] [WARNING] Port 100 returned code 10035. Treating as ERROR.
+[04-12-2025 01:30:30] Port 100: ERROR during connection attempt.
+[04-12-2025 01:30:30] Scan process ended.

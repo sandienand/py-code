@@ -53,7 +53,7 @@ def add_new_credential():
     data_record = f"{resource}{DELIMITER}{username}{DELIMITER}{password}\n"
 
     #encryption
-    encrypted_record = rot3_cipher(data_record, mode='encrypt')
+    encrypted_record = rot3_cipher(data_record, mode='encrypt'$$)
 
     #append new record
     try:

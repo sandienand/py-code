@@ -1,0 +1,4 @@
+[04-12-2025 03:06:26] Input validation successful. Beginning scan.
+[04-12-2025 03:06:26] Starting scan on 129.232.136.90 from port 80 to 80.
+[04-12-2025 03:06:26] Port 80: OPEN
+[04-12-2025 03:06:26] Scan process ended.
